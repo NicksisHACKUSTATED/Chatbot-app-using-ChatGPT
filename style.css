@@ -1,0 +1,50 @@
+/* Reset some default styles */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set up the chat container */
+.chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the chat box */
+.chat-box {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Style the chat log */
+.chat-log {
+    margin-bottom: 10px;
+}
+
+/* Style the chat input */
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+button {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
