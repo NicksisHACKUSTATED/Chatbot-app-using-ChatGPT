@@ -1,18 +1,19 @@
-/* Reset some default styles */
+
 body, h1, p, input, button {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Set up the chat container */
+
 .chat-container {
+    
     width: 300px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Style the chat box */
+
 .chat-box {
     background-color: #f0f0f0;
     border-radius: 5px;
@@ -21,7 +22,7 @@ body, h1, p, input, button {
     overflow-y: auto;
 }
 
-/* Style the chat log */
+
 .chat-log {
     margin-bottom: 10px;
 }
@@ -32,11 +33,18 @@ body, h1, p, input, button {
     margin-top: 10px;
 }
 
-input[type="text"] {
+/*input[type="text"] {
     flex-grow: 1;
     padding: 5px;
     border: none;
     border-radius: 3px;
+}*/
+.user-message{
+    color: grey;
+
+}
+.bot-message{
+    color: green;
 }
 
 button {
