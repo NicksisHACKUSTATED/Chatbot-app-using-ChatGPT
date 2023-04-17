@@ -4,7 +4,7 @@ function sendMessage() {
     
     // Create a new chat bubble element
     var chatBubble = document.createElement('div');
-    chatBubble.className = 'chat-bubble';
+    chatBubble.className = 'chat-bubble user-message';
     chatBubble.textContent = 'User: ' + userInput;
     
     // Append chat bubble to chat log
@@ -46,8 +46,8 @@ function Reply(userInput) {
                 console.log(response);
                 var botInput = response.response; // Update this with the appropriate property from the API response
                 var chatBubble = document.createElement('div');
-                chatBubble.className = 'chat-bubble';
-                chatBubble.textContent = 'Bot: ' + botInput;
+                chatBubble.className = 'chat-bubble bot-message';
+                chatBubble.textContent = 'Bot: ' + botInput; 
                 document.getElementById('chat-log').appendChild(chatBubble);
             }
         })
